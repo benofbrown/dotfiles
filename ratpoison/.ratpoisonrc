@@ -1,0 +1,46 @@
+startup_message off
+msgwait 1
+escape C-x
+exec xsetroot -solid black
+set font DejaVuSansCondensed-11
+set border 0
+exec /home/ben/bin/startup.sh
+
+definekey top C-Right next
+definekey top C-Left prev
+definekey top C-M-l exec xscreensaver-command -lock
+
+alias term exec urxvt +sb
+alias firefox exec /home/ben/bin/firefox.sh
+alias chrome exec google-chrome
+alias spotify exec /home/ben/bin/my-spotify
+alias clipsync exec xclip -o | xclip -i -selection clipboard
+
+bind c term
+bind C-c term
+bind t nextscreen
+bind C-t nextscreen
+bind slash clipsync
+bind C-q only
+
+
+definekey top C-M-f firefox
+definekey top C-M-c chrome
+definekey top C-M-s spotify
+
+definekey top M-F5 nextscreen
+definekey top M-Tab focus
+definekey top C-M-bracketleft sselect 0
+definekey top C-M-bracketright sselect 1
+
+definekey top C-M-space exec mpc toggle
+definekey top C-M-Up exec amixer set Master 2+
+definekey top C-M-Down exec amixer set Master 2-
+definekey top C-M-m exec mpc next
+definekey top C-M-n exec mpc prev
+definekey top C-M-b exec ratpoison -c "echo $(mpc)"
+
+set padding 0 0 0 26
+
+unmanage panel
+exec rpws init 4 -k
