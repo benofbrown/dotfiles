@@ -1,6 +1,10 @@
 bindkey -v
 source ~/.zsh/git-prompt/zshrc.sh
-source ~/.zsh/functions/*.sh
+for func in ~/.zsh/functions/*.sh; do
+  source $func
+done
+unset func
+
 PROMPT='%F{green}%m%F{cyan} %~ $(git_super_status)
 %f%# '
 
