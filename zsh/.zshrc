@@ -27,6 +27,9 @@ bindkey '\e.' insert-last-word
 bindkey -M vicmd "j" vi-down-line-or-history
 bindkey -M vicmd "k" vi-up-line-or-history
 
+bindkey '^N' menu-complete
+bindkey '^P' reverse-menu-complete
+
 fpath=(~/.zsh/completion $fpath)
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select=2
