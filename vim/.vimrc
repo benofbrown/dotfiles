@@ -24,6 +24,7 @@ if has("autocmd")
     autocmd FileType c setlocal cc=81
   endif
 
+  autocmd FileType java setlocal number
   autocmd FileType perl setlocal number tw=80
   autocmd FileType perl call ToggleTabs()
   autocmd FileType python setlocal number
