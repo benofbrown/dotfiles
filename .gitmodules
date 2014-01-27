@@ -13,3 +13,6 @@
 [submodule "vim/.vim/bundle/vim-ps1"]
 	path = vim/.vim/bundle/vim-ps1
 	url = https://github.com/PProvost/vim-ps1.git
+[submodule "zsh/.zsh/git-prompt"]
+	path = zsh/.zsh/git-prompt
+	url = https://github.com/olivierverdier/zsh-git-prompt.git
