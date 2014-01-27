@@ -70,6 +70,8 @@ nnoremap <leader>t :NERDTreeToggle<cr>
 nnoremap <leader><tab> :call ToggleTabs()<cr>
 nnoremap <leader>a :call ToggleNonASCII()<cr>
 
+nnoremap <C-n> :bn<cr>
+
 colorscheme solarized
 
 set ruler
