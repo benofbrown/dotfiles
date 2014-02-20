@@ -16,3 +16,6 @@
 [submodule "zsh/.zsh/git-prompt"]
 	path = zsh/.zsh/git-prompt
 	url = https://github.com/olivierverdier/zsh-git-prompt.git
+[submodule "vim/.vim/bundle/tagbar"]
+	path = vim/.vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
