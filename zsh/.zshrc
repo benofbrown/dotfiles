@@ -50,3 +50,4 @@ function precmd()
 }
 
 export PATH=~/bin/:$PATH
+test -n "$TMUX" && test -x doge/bin/doge && doge/bin/doge

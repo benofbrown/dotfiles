@@ -13,7 +13,7 @@ definekey top C-M-l exec xscreensaver-command -lock
 alias term exec urxvt +sb
 alias firefox exec /home/ben/bin/firefox.sh
 alias chrome exec google-chrome
-alias spotify exec /home/ben/bin/my-spotify
+alias spotify exec spotify
 alias clipsync exec xclip -o | xclip -i -selection clipboard
 
 bind c term
