@@ -5,7 +5,9 @@ for func in ~/.zsh/functions/*.sh; do
 done
 unset func
 
-PROMPT='%F{green}%m%F{cyan} %~ %f$(git_super_status)
+PROMPT_CO='✓'
+PROMPT_CE='%?'
+PROMPT='%F{green}%m [%(?,%F{green}$PROMPT_CO%f,%F{red}$PROMPT_CE%f)%F{green}] %F{cyan}%~ %f$(git_super_status)
 %# '
 
 HISTSIZE=1000
