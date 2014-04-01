@@ -51,5 +51,5 @@ function precmd()
   esac
 }
 
-export PATH=~/bin/:$PATH
+export PATH=~/bin:~/.local/bin:$PATH
 test -n "$TMUX" && test -x doge/bin/doge && doge/bin/doge
