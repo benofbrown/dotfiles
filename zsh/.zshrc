@@ -52,4 +52,4 @@ function precmd()
 }
 
 export PATH=~/bin:~/.local/bin:$PATH
-test -n "$TMUX" && test -x doge/bin/doge && doge/bin/doge
+test -n "$TMUX" && test -x doge/bin/doge && doge/bin/doge || true
