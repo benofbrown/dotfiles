@@ -69,6 +69,7 @@ nnoremap <leader>s :set invspell<cr>
 nnoremap <leader>t :NERDTreeToggle<cr>
 nnoremap <leader><tab> :call ToggleTabs()<cr>
 nnoremap <leader>a :call ToggleNonASCII()<cr>
+nnoremap <silent> <leader>b :let b:is_bash=1<cr>:setf sh<cr>
 
 nnoremap <C-n> :bn<cr>
 

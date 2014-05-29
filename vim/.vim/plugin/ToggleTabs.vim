@@ -9,7 +9,7 @@ function! ToggleTabs()
     else
       syn match ErrorMsg /\t/ containedin=ALL
     endif
-    syn match ErrorMsg /\s*$/ containedin=ALL
+    syn match ErrorMsg /\s\+$/ containedin=ALL
     let b:showtabs = 1
   else
     syntax off
