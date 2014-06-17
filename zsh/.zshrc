@@ -1,5 +1,6 @@
 bindkey -v
 source ~/.zsh/git-prompt/zshrc.sh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 for func in ~/.zsh/functions/*.sh; do
   source $func
 done
