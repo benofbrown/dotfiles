@@ -22,6 +22,7 @@ if has("autocmd")
     autocmd FileType make setlocal cc=81
     autocmd FileType sh setlocal cc=81
     autocmd FileType c setlocal cc=81
+    autocmd FileType python setlocal cc=80
   endif
 
   autocmd FileType java setlocal number
@@ -29,6 +30,7 @@ if has("autocmd")
   autocmd FileType perl call ToggleTabs()
   autocmd FileType python setlocal number
   autocmd FileType python call ToggleTabs()
+  autocmd FileType python setlocal sw=4 ts=4
   autocmd FileType gitcommit setlocal tw=72
   autocmd FileType ruby setlocal number
   autocmd FileType puppet setlocal number
@@ -81,3 +83,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
 set laststatus=2
+
+let g:netrw_liststyle=3
