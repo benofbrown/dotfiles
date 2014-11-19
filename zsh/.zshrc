@@ -1,19 +1,20 @@
-bindkey -v
-source ~/.zsh/git-prompt/zshrc.sh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-for func in ~/.zsh/functions/*.sh; do
-  source $func
-done
-unset func
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="ben"
+DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_TITLE="true"
+plugins=(vagrant)
+source $ZSH/oh-my-zsh.sh
 
-PROMPT_CO='✓'
-PROMPT_CE='%?'
-PROMPT='%F{green}%m [%(?,%F{green}$PROMPT_CO%f,%F{red}$PROMPT_CE%f)%F{green}] %F{cyan}%~ %f$(git_super_status)
-%# '
+
+bindkey -v
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.history
+
+unsetopt hist_verify
+unsetopt share_history
 
 setopt APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
@@ -23,8 +24,8 @@ setopt PUSHD_TO_HOME
 setopt PUSHD_IGNORE_DUPS
 setopt NO_BEEP
 
-test -e ~/.aliases && . ~/.aliases
-test -e ~/.funcs && . ~/.funcs
+[[ -e ~/.aliases ]] && . ~/.aliases
+[[ -e ~/.funcs ]] && . ~/.funcs
 
 bindkey '\e.' insert-last-word
 
@@ -34,10 +35,7 @@ bindkey -M vicmd "k" vi-up-line-or-history
 bindkey '^N' menu-complete
 bindkey '^P' reverse-menu-complete
 
-fpath=(~/.zsh/completion $fpath)
-autoload -U compinit && compinit
-zstyle ':completion:*' menu select=2
-zstyle ":completion:*:descriptions" format "%B%d%b"
+fpath=(~/.zsh/functions $fpath)
 
 export EDITOR=vi
 
