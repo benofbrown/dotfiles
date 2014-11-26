@@ -4,6 +4,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
 plugins=(vagrant)
 source $ZSH/oh-my-zsh.sh
+unset GIT_PAGER LESS PAGER
 
 
 bindkey -v
