@@ -7,6 +7,7 @@ source $ZSH/oh-my-zsh.sh
 unset GIT_PAGER LESS PAGER
 
 
+
 bindkey -v
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -37,6 +38,8 @@ bindkey '^N' menu-complete
 bindkey '^P' reverse-menu-complete
 
 fpath=(~/.zsh/functions $fpath)
+autoload -Uz load_functions
+load_functions
 
 export EDITOR=vi
 

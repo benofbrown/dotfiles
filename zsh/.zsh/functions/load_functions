@@ -1,0 +1,12 @@
+load_functions() {
+  local funcs func
+
+  setopt LOCAL_OPTIONS NULL_GLOB
+
+  funcs=(~/.zsh/functions/*.sh)
+  if [[ -n "$funcs" ]]; then
+    for func in $funcs; do
+      source "$func"
+    done
+  fi
+}
