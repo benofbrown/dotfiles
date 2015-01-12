@@ -72,8 +72,10 @@ nnoremap <silent> <leader>t :NERDTreeToggle<cr>
 nnoremap <silent> <leader><tab> :call ToggleTabs()<cr>
 nnoremap <silent> <leader>a :call ToggleNonASCII()<cr>
 nnoremap <silent> <leader>b :let b:is_bash=1<cr>:setf sh<cr>
+nnoremap <silent> <leader>w :Ack <cword><cr>
 
 nnoremap <C-n> :bn<cr>
+
 
 colorscheme solarized
 
@@ -84,3 +86,4 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 
 let g:netrw_liststyle=3
+let g:ackprg = 'ag --nogroup --nocolor --column'
