@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ben"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
-plugins=(vagrant)
+plugins=(vagrant svn-fast-info)
 source $ZSH/oh-my-zsh.sh
 unset GIT_PAGER LESS PAGER
 

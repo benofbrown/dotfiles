@@ -1,13 +1,13 @@
 execute pathogen#infect()
 syntax on
-set sw=2 smarttab et ts=2
+set shiftwidth=2 smarttab expandtab tabstop=2
 set nocompatible
-set bg=dark
+set background=dark
 set spelllang=en_gb
 
 if has("autocmd")
   augroup vimrcEx
-  au!
+  autocmd!
 
   autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -17,25 +17,25 @@ if has("autocmd")
   autocmd BufReadPost *.run set filetype=sh
 
   if v:version >= 703
-    autocmd FileType perl setlocal cc=81
-    autocmd FileType puppet setlocal cc=81
-    autocmd FileType make setlocal cc=81
-    autocmd FileType sh setlocal cc=81
-    autocmd FileType c setlocal cc=81
-    autocmd FileType python setlocal cc=80
+    autocmd FileType perl setlocal colorcolumn=81
+    autocmd FileType puppet setlocal colorcolumn=81
+    autocmd FileType make setlocal colorcolumn=81
+    autocmd FileType sh setlocal colorcolumn=81
+    autocmd FileType c setlocal colorcolumn=81
+    autocmd FileType python setlocal colorcolumn=80
   endif
 
   autocmd FileType java setlocal number
-  autocmd FileType perl setlocal number tw=80
+  autocmd FileType perl setlocal number textwidth=80
   autocmd FileType perl call ToggleTabs()
   autocmd FileType python setlocal number
   autocmd FileType python call ToggleTabs()
-  autocmd FileType python setlocal sw=4 ts=4
-  autocmd FileType gitcommit setlocal tw=72
+  autocmd FileType python setlocal shiftwidth=4 tabstop=4 autoindent
+  autocmd FileType gitcommit setlocal textwidth=72
   autocmd FileType ruby setlocal number
   autocmd FileType puppet setlocal number
   autocmd FileType sh setlocal number
-  autocmd FileType make setlocal nosmarttab noet ts=4
+  autocmd FileType make setlocal nosmarttab noet tabstop=4
   autocmd FileType make call ToggleTabs()
   autocmd FileType c call ToggleTabs()
   autocmd FileType c setlocal number
