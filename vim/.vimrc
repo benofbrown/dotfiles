@@ -37,6 +37,7 @@ if has("autocmd")
   autocmd FileType sh setlocal number
   autocmd FileType make setlocal nosmarttab noet tabstop=4
   autocmd FileType make call ToggleTabs()
+  autocmd FileType markdown setlocal shiftwidth=4 tabstop=4
   autocmd FileType c call ToggleTabs()
   autocmd FileType c setlocal number
 
