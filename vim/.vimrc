@@ -15,6 +15,7 @@ if has("autocmd")
   \ endif
 
   autocmd BufReadPost *.run set filetype=sh
+  autocmd BufReadPost *.gradle set filetype=groovy
 
   if v:version >= 703
     autocmd FileType perl setlocal colorcolumn=81
@@ -23,6 +24,7 @@ if has("autocmd")
     autocmd FileType sh setlocal colorcolumn=81
     autocmd FileType c setlocal colorcolumn=81
     autocmd FileType python setlocal colorcolumn=80
+    autocmd FileType groovy setlocal colorcolumn=80
   endif
 
   autocmd FileType java setlocal number
@@ -40,6 +42,7 @@ if has("autocmd")
   autocmd FileType markdown setlocal shiftwidth=4 tabstop=4
   autocmd FileType c call ToggleTabs()
   autocmd FileType c setlocal number
+  autocmd FileType groovy setlocal number shiftwidth=4 tabstop=4
 
   augroup END
 endif
@@ -88,3 +91,8 @@ set laststatus=2
 
 let g:netrw_liststyle=3
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
