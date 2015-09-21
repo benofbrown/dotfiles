@@ -23,7 +23,7 @@
 	path = vim/.vim/vim-yaml
 	url = https://github.com/stephpy/vim-yaml.git
 [submodule "oh-my-zsh/.oh-my-zsh"]
-	path = oh-my-zsh/.oh-my-zsh
+	path = zsh/.oh-my-zsh
 	url = https://github.com/benofbrown/oh-my-zsh.git
 [submodule "vim/.vim/bundle/ack.vim"]
 	path = vim/.vim/bundle/ack.vim
