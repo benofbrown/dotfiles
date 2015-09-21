@@ -72,10 +72,10 @@ nnoremap <C-u> :undo<cr>
 nnoremap <leader>n :set invnu<cr>
 nnoremap <leader>h :set invhlsearch<cr>
 nnoremap <leader>s :set invspell<cr>
-nnoremap <silent> <leader>t :NERDTreeToggle<cr>
+nnoremap <silent> <leader>T :NERDTreeToggle<cr>
 nnoremap <silent> <leader><tab> :call ToggleTabs()<cr>
 nnoremap <silent> <leader>a :call ToggleNonASCII()<cr>
-nnoremap <silent> <leader>b :let b:is_bash=1<cr>:setf sh<cr>
+nnoremap <silent> <leader>B :let b:is_bash=1<cr>:setf sh<cr>
 nnoremap <silent> <leader>w :Ack <cword><cr>
 
 nnoremap <C-n> :bn<cr>
