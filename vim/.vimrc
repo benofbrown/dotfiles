@@ -36,6 +36,8 @@ if has("autocmd")
   autocmd FileType gitcommit setlocal textwidth=72
   autocmd FileType ruby setlocal number
   autocmd FileType puppet setlocal number
+  autocmd FileType go setlocal number
+  autocmd FileType go setlocal nosmarttab noet ts=4
   autocmd FileType sh setlocal number
   autocmd FileType make setlocal nosmarttab noet tabstop=4
   autocmd FileType make call ToggleTabs()
