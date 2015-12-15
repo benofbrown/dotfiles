@@ -55,3 +55,4 @@ function precmd()
 }
 
 export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.1.0/bin:$PATH
+export LESS=FX
