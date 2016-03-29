@@ -23,13 +23,13 @@ if has("autocmd")
     autocmd FileType make setlocal colorcolumn=81
     autocmd FileType perl setlocal colorcolumn=81
     autocmd FileType puppet setlocal colorcolumn=81
-    autocmd FileType python setlocal colorcolumn=81
+    autocmd FileType python setlocal colorcolumn=80
     autocmd FileType sh setlocal colorcolumn=81
     autocmd FileType tex setlocal colorcolumn=81
   endif
 
   autocmd FileType c call ToggleTabs()
-  autocmd FileType c setlocal number
+  autocmd FileType c setlocal number path=.,/usr/include,/usr/include/x86_64-linux-gnu,,
   autocmd FileType gitcommit setlocal textwidth=72
   autocmd FileType go setlocal nosmarttab noet ts=4
   autocmd FileType go setlocal number
@@ -81,6 +81,8 @@ nnoremap <silent> <leader><tab> :call ToggleTabs()<cr>
 nnoremap <silent> <leader>a :call ToggleNonASCII()<cr>
 nnoremap <silent> <leader>B :let b:is_bash=1<cr>:setf sh<cr>
 nnoremap <silent> <leader>w :Ack <cword><cr>
+nnoremap <silent> <leader>S :SyntasticReset<cr>
+nnoremap <silent> <leader>; :TagbarToggle<cr>
 
 nnoremap <C-n> :bn<cr>
 

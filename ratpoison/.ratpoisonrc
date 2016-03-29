@@ -10,7 +10,7 @@ definekey top C-Right next
 definekey top C-Left prev
 definekey top C-M-l exec xscreensaver-command -lock
 
-alias term exec urxvt +sb
+alias term exec urxvt
 alias firefox exec /home/ben/bin/firefox.sh
 alias chrome exec google-chrome
 alias spotify exec spotify
