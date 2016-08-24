@@ -30,7 +30,7 @@ if has("autocmd")
 
   autocmd FileType c call ToggleTabs()
   autocmd FileType c setlocal number path=.,/usr/include,/usr/include/x86_64-linux-gnu,,
-  autocmd FileType gitcommit setlocal textwidth=72
+  autocmd FileType gitcommit setlocal textwidth=70
   autocmd FileType go setlocal nosmarttab noet ts=4
   autocmd FileType go setlocal number
   autocmd FileType groovy setlocal number shiftwidth=4 tabstop=4
@@ -103,3 +103,4 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java', 'eruby'] }
+let g:syntastic_puppet_puppetlint_args = '--with-filename --error-level all --no-names_containing_dash-check --no-80chars-check'

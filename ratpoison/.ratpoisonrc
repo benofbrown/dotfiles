@@ -8,7 +8,7 @@ exec /home/ben/bin/startup.sh
 
 definekey top C-Right next
 definekey top C-Left prev
-definekey top C-M-l exec xscreensaver-command -lock
+definekey top C-M-l exec slock
 
 alias term exec urxvt
 alias firefox exec /home/ben/bin/firefox.sh

@@ -54,5 +54,5 @@ function precmd()
   esac
 }
 
-export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.1.0/bin:$PATH
+export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.1.0/bin:$PATH:~/gocode/bin
 export LESS=FX
