@@ -42,7 +42,7 @@ if has("autocmd")
   autocmd FileType perl setlocal number textwidth=80
   autocmd FileType puppet setlocal number
   autocmd FileType python call ToggleTabs()
-  autocmd FileType python setlocal number
+  autocmd FileType python setlocal number makeprg=pep8\ %
   autocmd FileType python setlocal shiftwidth=4 tabstop=4 autoindent
   autocmd FileType ruby setlocal number
   autocmd FileType sh setlocal number
@@ -76,7 +76,6 @@ nnoremap <C-u> :undo<cr>
 nnoremap <leader>n :set invnu<cr>
 nnoremap <leader>h :set invhlsearch<cr>
 nnoremap <leader>s :set invspell<cr>
-nnoremap <silent> <leader>T :NERDTreeToggle<cr>
 nnoremap <silent> <leader><tab> :call ToggleTabs()<cr>
 nnoremap <silent> <leader>a :call ToggleNonASCII()<cr>
 nnoremap <silent> <leader>B :let b:is_bash=1<cr>:setf sh<cr>
@@ -85,7 +84,6 @@ nnoremap <silent> <leader>S :SyntasticReset<cr>
 nnoremap <silent> <leader>; :TagbarToggle<cr>
 
 nnoremap <C-n> :bn<cr>
-
 
 colorscheme solarized
 
@@ -102,5 +100,5 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java', 'eruby'] }
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java', 'eruby', 'c'] }
 let g:syntastic_puppet_puppetlint_args = '--with-filename --error-level all --no-names_containing_dash-check --no-80chars-check'
