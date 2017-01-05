@@ -16,10 +16,10 @@ if has("autocmd")
 
   autocmd BufReadPost *.run set filetype=sh
   autocmd BufReadPost *.gradle set filetype=groovy
+  autocmd BufReadPost Jenkinsfile set filetype=groovy
 
   if v:version >= 703
     autocmd FileType c setlocal colorcolumn=81
-    autocmd FileType groovy setlocal colorcolumn=81
     autocmd FileType make setlocal colorcolumn=81
     autocmd FileType perl setlocal colorcolumn=81
     autocmd FileType puppet setlocal colorcolumn=81
