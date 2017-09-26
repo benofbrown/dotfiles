@@ -15,7 +15,7 @@ alias firefox exec /home/ben/bin/firefox.sh
 alias chrome exec google-chrome
 alias spotify exec spotify
 alias clipsync exec xclip -o | xclip -i -selection clipboard
-alias setvi exec echo "set -o vi; export LESS=FX" | xclip -i
+alias setvi exec echo "set -o vi; export LESS=FXR" | xclip -i
 
 bind c term
 bind C-c term

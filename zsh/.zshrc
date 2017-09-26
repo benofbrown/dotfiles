@@ -26,8 +26,8 @@ setopt PUSHD_TO_HOME
 setopt PUSHD_IGNORE_DUPS
 setopt NO_BEEP
 
-[[ -e ~/.aliases ]] && . ~/.aliases
-[[ -e ~/.funcs ]] && . ~/.funcs
+[[ -r ~/.aliases ]] && . ~/.aliases
+[[ -r ~/.funcs ]] && . ~/.funcs
 
 bindkey '\e.' insert-last-word
 
@@ -37,7 +37,7 @@ bindkey -M vicmd "k" vi-up-line-or-history
 bindkey '^N' menu-complete
 bindkey '^P' reverse-menu-complete
 
-fpath=(~/.zsh/functions $fpath)
+fpath+=(~/.zsh/functions)
 autoload -Uz load_functions
 load_functions
 
@@ -45,8 +45,7 @@ export EDITOR=vi
 
 export GPG_TTY=$TTY
 
-function precmd()
-{
+function precmd() {
   case $TERM in
     screen*)
       printf "\033k%s\033\\" zsh
@@ -54,5 +53,6 @@ function precmd()
   esac
 }
 
-export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.1.0/bin:$PATH:~/gocode/bin
-export LESS=FX
+export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.3.0/bin:$PATH:~/gocode/bin
+export LESS=FXR
+export LIBVIRT_DEFAULT_URI=qemu:///system

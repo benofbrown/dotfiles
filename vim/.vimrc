@@ -1,5 +1,6 @@
 execute pathogen#infect()
 syntax on
+filetype plugin on
 set shiftwidth=2 smarttab expandtab tabstop=2
 set nocompatible
 set background=dark
@@ -17,36 +18,6 @@ if has("autocmd")
   autocmd BufReadPost *.run set filetype=sh
   autocmd BufReadPost *.gradle set filetype=groovy
   autocmd BufReadPost Jenkinsfile set filetype=groovy
-
-  if v:version >= 703
-    autocmd FileType c setlocal colorcolumn=81
-    autocmd FileType make setlocal colorcolumn=81
-    autocmd FileType perl setlocal colorcolumn=81
-    autocmd FileType puppet setlocal colorcolumn=81
-    autocmd FileType python setlocal colorcolumn=80
-    autocmd FileType sh setlocal colorcolumn=81
-    autocmd FileType tex setlocal colorcolumn=81
-  endif
-
-  autocmd FileType c call ToggleTabs()
-  autocmd FileType c setlocal number path=.,/usr/include,/usr/include/x86_64-linux-gnu,,
-  autocmd FileType gitcommit setlocal textwidth=70
-  autocmd FileType go setlocal nosmarttab noet ts=4
-  autocmd FileType go setlocal number
-  autocmd FileType groovy setlocal number shiftwidth=4 tabstop=4
-  autocmd FileType java setlocal number
-  autocmd FileType make call ToggleTabs()
-  autocmd FileType make setlocal nosmarttab noet tabstop=4
-  autocmd FileType markdown setlocal shiftwidth=4 tabstop=4
-  autocmd FileType perl call ToggleTabs()
-  autocmd FileType perl setlocal number textwidth=80
-  autocmd FileType puppet setlocal number
-  autocmd FileType python call ToggleTabs()
-  autocmd FileType python setlocal number makeprg=pep8\ %
-  autocmd FileType python setlocal shiftwidth=4 tabstop=4 autoindent
-  autocmd FileType ruby setlocal number
-  autocmd FileType sh setlocal number
-  autocmd FileType tex setlocal textwidth=80
 
   augroup END
 endif
