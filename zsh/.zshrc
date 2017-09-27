@@ -9,6 +9,8 @@ unset GIT_PAGER LESS PAGER
 
 
 bindkey -v
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[comment]='none'
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 HISTSIZE=1000
