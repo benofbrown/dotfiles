@@ -38,6 +38,7 @@ definekey top C-M-bracketright sselect 1
 definekey top C-M-space exec mpc toggle
 definekey top C-M-Up exec pactl set-sink-volume 0 +5%
 definekey top C-M-Down exec pactl set-sink-volume 0 -5%
+definekey top C-M-v exec pactl set-sink-volume 0 40%
 definekey top C-M-m exec mpc next
 definekey top C-M-n exec mpc prev
 definekey top C-M-b exec ratpoison -c "echo $(mpc)"
