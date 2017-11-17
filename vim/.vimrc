@@ -1,4 +1,5 @@
 execute pathogen#infect()
+Helptags
 syntax on
 filetype plugin on
 set shiftwidth=2 smarttab expandtab tabstop=2
@@ -73,3 +74,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java', 'eruby', 'c'] }
 let g:syntastic_puppet_puppetlint_args = '--with-filename --error-level all --no-names_containing_dash-check --no-80chars-check --no-variable_is_lowercase-check'
+
+let g:airline#extensions#ale#enabled = 1
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+let g:ale_python_pylint_options = '--disable=C0111'
