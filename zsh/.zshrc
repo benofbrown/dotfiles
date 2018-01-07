@@ -56,5 +56,5 @@ function precmd() {
 }
 
 export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.3.0/bin:$PATH:~/gocode/bin
-export LESS=FXR
+export LESS=FX
 export LIBVIRT_DEFAULT_URI=qemu:///system

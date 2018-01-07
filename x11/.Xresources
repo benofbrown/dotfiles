@@ -69,7 +69,7 @@
 *color14: S_base1
 *color15: S_base3
 
-URxvt.font: xft:Inconsolata:pixelsize=16,xft:Inconsolata for Powerline:pixelsize=16
+URxvt.font: xft:Roboto Mono for Powerline:pixelsize=20
 URxvt.scrollBar: False
 URxvt.cursorUnderline: True
 URxvt.cursorBlink: True
