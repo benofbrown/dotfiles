@@ -31,9 +31,6 @@
 [submodule "vim/.vim/bundle/command-t"]
 	path = vim/.vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "vim/.vim/bundle/pep8.vim"]
-	path = vim/.vim/bundle/pep8.vim
-	url = https://github.com/ronichoudhury/pep8.vim.git
 [submodule "jinja/.vim"]
 	path = jinja/.vim
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
