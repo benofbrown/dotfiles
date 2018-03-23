@@ -69,7 +69,8 @@
 *color14: S_base1
 *color15: S_base3
 
-URxvt.font: xft:Roboto Mono Light for Powerline:pixelsize=15
+! From https://github.com/belluzj/fantasque-sans
+URxvt.font: xft:Fantasque Sans Mono:pixelsize=17
 URxvt.scrollBar: False
 URxvt.cursorUnderline: True
 URxvt.cursorBlink: True
