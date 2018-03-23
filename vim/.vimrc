@@ -7,6 +7,8 @@ set nocompatible
 set background=dark
 set spelllang=en_gb
 
+set listchars=eol:↵,tab:⇥•,trail:•
+
 if has("autocmd")
   augroup vimrcEx
   autocmd!
