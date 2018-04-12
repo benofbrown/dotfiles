@@ -58,3 +58,6 @@ function precmd() {
 export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.3.0/bin:$PATH:~/gocode/bin
 export LESS=FXR
 export LIBVIRT_DEFAULT_URI=qemu:///system
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
