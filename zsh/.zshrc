@@ -55,6 +55,6 @@ function precmd() {
   esac
 }
 
-export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.3.0/bin:$PATH:~/gocode/bin
+export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.3.0/bin:$PATH:~/go/bin
 export LESS=FX
 export LIBVIRT_DEFAULT_URI=qemu:///system

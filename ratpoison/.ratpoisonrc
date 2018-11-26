@@ -12,7 +12,7 @@ definekey top C-M-l exec slock
 
 alias term exec urxvt
 alias firefox exec /home/ben/bin/firefox.sh
-alias chrome exec google-chrome
+alias chrome exec google-chrome --force-device-scale-factor=1.2
 alias spotify exec spotify
 alias clipsync exec xclip -o | xclip -i -selection clipboard
 alias setvi exec echo "set -o vi; export LESS=FXR" | xclip -i
