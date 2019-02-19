@@ -2,7 +2,10 @@ startup_message off
 msgwait 1
 escape C-x
 exec xsetroot -solid black
-set font DejaVuSansCondensed-11
+set font FantasqueSansMono-14
+set fgcolor rgb:83/94/96
+set fwcolor rgb:83/94/96
+set bgcolor rgb:00/2b/36
 set border 0
 exec /home/ben/bin/startup.sh
 
@@ -29,6 +32,10 @@ bind C-q only
 definekey top C-M-f firefox
 definekey top C-M-c chrome
 definekey top C-M-s spotify
+definekey top C-M-q exec qjackctl
+definekey top C-M-r exec /home/ben/bin/vcvrack.sh
+
+definekey top C-space exec rofi -show run
 
 definekey top M-F5 nextscreen
 definekey top M-Tab focus
