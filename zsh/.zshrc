@@ -45,6 +45,12 @@ fpath+=(~/.zsh/functions)
 autoload -Uz load_functions
 load_functions
 
+function precmd() {
+  if [ -n "$TMUX" ]; then
+    printf '\033k%s\033\\' "${PWD##*/}"
+  fi
+}
+
 export EDITOR=vi
 
 export GPG_TTY=$TTY
