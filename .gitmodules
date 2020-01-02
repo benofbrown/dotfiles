@@ -14,7 +14,7 @@
 	path = zsh/.zsh/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "vim/.vim/vim-yaml"]
-	path = vim/.vim/vim-yaml
+	path = vim-yaml/.vim
 	url = https://github.com/stephpy/vim-yaml.git
 [submodule "oh-my-zsh/.oh-my-zsh"]
 	path = zsh/.oh-my-zsh
