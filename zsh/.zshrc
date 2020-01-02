@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ben"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
-plugins=(vagrant svn-fast-info)
+plugins=(vagrant svn-fast-info docker docker-compose)
 source $ZSH/oh-my-zsh.sh
 unset GIT_PAGER LESS PAGER
 
@@ -19,6 +19,7 @@ HISTFILE=~/.history
 
 unsetopt hist_verify
 unsetopt share_history
+unsetopt AUTO_CD
 
 setopt APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
@@ -27,6 +28,7 @@ setopt AUTO_PUSHD
 setopt PUSHD_TO_HOME
 setopt PUSHD_IGNORE_DUPS
 setopt NO_BEEP
+setopt MAIL_WARNING
 
 [[ -r ~/.aliases ]] && . ~/.aliases
 [[ -r ~/.funcs ]] && . ~/.funcs
@@ -61,3 +63,4 @@ export LIBVIRT_DEFAULT_URI=qemu:///system
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
+export ANSIBLE_CONFIG=~/.ansible.cfg
