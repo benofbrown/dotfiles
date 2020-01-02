@@ -49,14 +49,6 @@ export EDITOR=vi
 
 export GPG_TTY=$TTY
 
-function precmd() {
-  case $TERM in
-    screen*)
-      printf "\033k%s\033\\" zsh
-    ;;
-  esac
-}
-
 export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.3.0/bin:$PATH:~/gocode/bin
 export LESS=FXR
 export LIBVIRT_DEFAULT_URI=qemu:///system
