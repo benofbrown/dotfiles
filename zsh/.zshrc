@@ -55,7 +55,7 @@ export EDITOR=vi
 
 export GPG_TTY=$TTY
 
-export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.3.0/bin:$PATH:~/gocode/bin
+export PATH=~/bin:~/.local/bin:~/.gem/ruby/2.5.0/bin:$PATH:~/gocode/bin
 export LESS=FXR
 export LIBVIRT_DEFAULT_URI=qemu:///system
 export VAGRANT_DEFAULT_PROVIDER=libvirt
