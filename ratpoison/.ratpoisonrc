@@ -7,6 +7,8 @@ set fgcolor rgb:83/94/96
 set fwcolor rgb:83/94/96
 set bgcolor rgb:00/2b/36
 set border 0
+set winname class
+unmanage polybar
 exec /home/ben/bin/startup.sh
 
 definekey top C-Right next
