@@ -273,7 +273,7 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 ;format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+format-foreground = #b58900
 ;format-underline = #0a6cf5
 
 label = %date% %time%
@@ -345,6 +345,7 @@ format-charging = <label-charging> <animation-charging>
 label-charging = "%percentage%%"
 
 format-discharging = <ramp-capacity>
+format-full = <ramp-capacity>
 ;format-discharging-underline = ${self.format-charging-underline}
 
 format-charging-prefix = "BAT "
