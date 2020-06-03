@@ -339,10 +339,10 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = <animation-charging>
+format-charging = <label-charging> <animation-charging>
 ;format-charging-underline = #ffb52a
 
-label-charging = "⚡ %percentage%%"
+label-charging = "%percentage%%"
 
 format-discharging = <ramp-capacity>
 ;format-discharging-underline = ${self.format-charging-underline}
