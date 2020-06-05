@@ -38,6 +38,7 @@ font-0 = Fantasque Sans Mono:style=Bold
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = Liberation Mono:style=Regular
 font-3 = Symbola:style=Regular 
+font-4 = Fantasque Sans Mono:style=Regular
 
 ;modules-left = bspwm i3
 ;modules-center = mpd
@@ -68,6 +69,7 @@ modules-left = mpd
 height = 23
 modules-right = workfilesystem pulseaudio memory cpu workwlan worketh battery temperature date
 font-0 = Fantasque Sans Mono:style=Bold:pixelsize=10
+font-4 = Fantasque Sans Mono:style=Regular:pixelsize=10
 padding-left = 1
 padding-right = 1
 
@@ -103,15 +105,14 @@ mount-0 = /
 mount-1 = /home
 
 label-mounted = %{F#b58900}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
+label-unmounted = %mountpoint%
+label-unmounted-font = 5
 label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/workfilesystem]
 inherit = module/filesystem
 mount-2 = /usr/local
 mount-3 = /home/ben/data
-label-unmounted = %mountpoint%
-label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/bspwm]
 type = internal/bspwm
