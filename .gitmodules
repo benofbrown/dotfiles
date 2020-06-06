@@ -34,3 +34,6 @@
 [submodule "vim/.vim/bundle/ale"]
 	path = vim/.vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "vim/.vim/bundle/kotlin-vim"]
+	path = vim/.vim/bundle/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim

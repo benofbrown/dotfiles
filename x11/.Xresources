@@ -69,7 +69,7 @@
 *color14: S_base1
 *color15: S_base3
 
-! From https://github.com/belluzj/fantasque-sans, and packages fonts-liberation and fonts-symbola
+! From https://github.com/belluzj/fantasque-sans, plus packages fonts-liberation and fonts-symbola
 URxvt.font: xft:Fantasque Sans Mono:pixelsize=23,xft:Liberation Mono:style=Regular,xft:Symbola:style=Regular 
 URxvt.scrollBar: False
 URxvt.cursorUnderline: True

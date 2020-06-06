@@ -1,5 +1,5 @@
-startup_message off
-msgwait 1
+set startupmessage 0
+set msgwait 1
 escape C-x
 exec xsetroot -solid black
 set font FantasqueSansMono-14
@@ -50,7 +50,7 @@ definekey top C-M-m exec mpc next
 definekey top C-M-n exec mpc prev
 definekey top C-M-b exec ratpoison -c "echo $(mpc)"
 
-set padding 0 0 0 26
+set padding 0 0 0 23
 
 unmanage panel
 exec rpws init 4 -k

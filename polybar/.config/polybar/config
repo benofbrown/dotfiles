@@ -15,7 +15,7 @@ width = 100%
 height = 26
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+;radius = 6.0
 fixed-center = false
 bottom = true
 
@@ -36,7 +36,9 @@ module-margin-right = 2
 
 font-0 = Fantasque Sans Mono:style=Bold
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-2 = Liberation Mono:style=Regular
+font-3 = Symbola:style=Regular 
+font-4 = Fantasque Sans Mono:style=Regular
 
 ;modules-left = bspwm i3
 ;modules-center = mpd
@@ -60,6 +62,20 @@ wm-name = polybar
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[bar/ben-work]
+inherit = bar/ben
+modules-left = mpd
+height = 23
+modules-right = workfilesystem pulseaudio memory cpu workwlan worketh battery temperature date
+font-0 = Fantasque Sans Mono:style=Bold:pixelsize=10
+font-4 = Fantasque Sans Mono:style=Regular:pixelsize=10
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 1
+module-margin-right = 0
+
 
 [module/xwindow]
 type = internal/xwindow
@@ -89,8 +105,14 @@ mount-0 = /
 mount-1 = /home
 
 label-mounted = %{F#b58900}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
+label-unmounted = %mountpoint%
+label-unmounted-font = 5
 label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/workfilesystem]
+inherit = module/filesystem
+mount-2 = /usr/local
+mount-3 = /home/ben/data
 
 [module/bspwm]
 type = internal/bspwm
@@ -154,16 +176,21 @@ label-urgent-padding = 2
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <bar-progress> <label-song>
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = ⏮
+icon-stop = ⏹
+icon-play = ⏵
+icon-pause = ⏸
+icon-next = ⏭
 
-label-song-maxlen = 25
+label-song-maxlen = 50
 label-song-ellipsis = true
+
+bar-progress-width = 20
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -246,6 +273,11 @@ ramp-signal-3 = ▅
 ramp-signal-4 = █
 ramp-signal-foreground = ${colors.foreground-alt}
 
+[module/workwlan]
+inherit = module/wlan
+interface = wlp3s0
+
+
 [module/eth]
 type = internal/network
 interface = enp1s0f1
@@ -261,6 +293,10 @@ format-disconnected =
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/worketh]
+inherit = module/eth
+interface = enp12s0
 
 [module/date]
 type = internal/date
@@ -281,11 +317,11 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+format-volume = <ramp-volume>
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = [muted]
+label-muted = 🔇
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -304,6 +340,10 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
 
 [module/alsa]
 type = internal/alsa
@@ -339,10 +379,11 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = <label-charging> <animation-charging>
+format-charging = <label-charging> <ramp-capacity>
 ;format-charging-underline = #ffb52a
 
 label-charging = "%percentage%%"
+label-charging-foreground = #859900
 
 format-discharging = <ramp-capacity>
 format-full = <ramp-capacity>
