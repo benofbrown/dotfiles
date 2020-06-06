@@ -277,6 +277,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 inherit = module/wlan
 interface = wlp3s0
 
+
 [module/eth]
 type = internal/network
 interface = enp1s0f1
