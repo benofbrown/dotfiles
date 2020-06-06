@@ -3,9 +3,9 @@ msgwait 1
 escape C-x
 exec xsetroot -solid black
 set font FantasqueSansMono-14
+set bgcolor rgb:07/36/42
 set fgcolor rgb:83/94/96
 set fwcolor rgb:83/94/96
-set bgcolor rgb:00/2b/36
 set border 0
 set winname class
 unmanage polybar
@@ -14,6 +14,7 @@ exec /home/ben/bin/startup.sh
 definekey top C-Right next
 definekey top C-Left prev
 definekey top C-M-l exec slock
+definekey top C-M-g exec gajim
 
 alias term exec urxvt
 alias firefox exec /home/ben/bin/firefox.sh
@@ -34,9 +35,6 @@ bind C-q only
 definekey top C-M-f firefox
 definekey top C-M-c chrome
 definekey top C-M-s spotify
-definekey top C-M-q exec qjackctl
-definekey top C-M-r exec /home/ben/bin/vcvrack.sh
-
 definekey top C-space exec rofi -show run
 
 definekey top M-F5 nextscreen
@@ -47,7 +45,7 @@ definekey top C-M-bracketright sselect 1
 definekey top C-M-space exec mpc toggle
 definekey top C-M-Up exec pactl set-sink-volume 0 +5%
 definekey top C-M-Down exec pactl set-sink-volume 0 -5%
-definekey top C-M-v exec pactl set-sink-volume 0 40%
+definekey top C-M-v exec pactl set-sink-volume 0 20%
 definekey top C-M-m exec mpc next
 definekey top C-M-n exec mpc prev
 definekey top C-M-b exec ratpoison -c "echo $(mpc)"

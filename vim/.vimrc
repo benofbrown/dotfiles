@@ -4,6 +4,7 @@ syntax on
 filetype plugin on
 set shiftwidth=2 smarttab expandtab tabstop=2
 set nocompatible
+set nomodeline
 set background=dark
 set spelllang=en_gb
 

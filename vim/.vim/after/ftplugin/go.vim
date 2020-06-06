@@ -1,2 +1,2 @@
-setlocal nosmarttab noexpandtab tabstop=4
+setlocal nosmarttab noexpandtab tabstop=4 shiftwidth=4
 setlocal number

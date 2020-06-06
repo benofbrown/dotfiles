@@ -7,9 +7,6 @@
 [submodule "vim/.vim/bundle/vim-fugitive"]
 	path = vim/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "vim/.vim/bundle/vim-ps1"]
-	path = vim/.vim/bundle/vim-ps1
-	url = https://github.com/PProvost/vim-ps1.git
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
@@ -17,7 +14,7 @@
 	path = zsh/.zsh/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "vim/.vim/vim-yaml"]
-	path = vim/.vim/vim-yaml
+	path = vim-yaml/.vim
 	url = https://github.com/stephpy/vim-yaml.git
 [submodule "oh-my-zsh/.oh-my-zsh"]
 	path = zsh/.oh-my-zsh
@@ -31,9 +28,6 @@
 [submodule "vim/.vim/bundle/command-t"]
 	path = vim/.vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
-[submodule "vim/.vim/bundle/pep8.vim"]
-	path = vim/.vim/bundle/pep8.vim
-	url = https://github.com/ronichoudhury/pep8.vim.git
 [submodule "jinja/.vim"]
 	path = jinja/.vim
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
