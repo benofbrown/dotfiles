@@ -50,7 +50,7 @@ definekey top C-M-m exec mpc next
 definekey top C-M-n exec mpc prev
 definekey top C-M-b exec ratpoison -c "echo $(mpc)"
 
-set padding 0 0 0 26
+set padding 0 0 0 23
 
 unmanage panel
 exec rpws init 4 -k
