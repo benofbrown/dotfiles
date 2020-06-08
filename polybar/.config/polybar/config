@@ -177,6 +177,7 @@ label-urgent-padding = 2
 [module/mpd]
 type = internal/mpd
 format-online = <bar-progress> <label-song>
+format-playing = <bar-progress> <label-song> 🎜
 
 icon-prev = ⏮
 icon-stop = ⏹
