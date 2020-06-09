@@ -421,7 +421,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <label>
-format-prefix = "TEMP "
+format-prefix = "🌡"
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #f50a4d
 format-warn = <label-warn>
