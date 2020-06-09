@@ -389,14 +389,14 @@ label-charging = "%percentage%%"
 label-charging-foreground = #859900
 
 format-discharging = <ramp-capacity>
-format-full = <ramp-capacity>
+format-full = <label-full>
+label-full = "🔌 "
 ;format-discharging-underline = ${self.format-charging-underline}
 
-format-charging-prefix = "BAT "
+format-charging-prefix = "🔌 "
 format-charging-prefix-foreground = ${colors.foreground-alt}
-format-discharging-prefix = "BAT "
+format-discharging-prefix = "🔋 "
 format-discharging-prefix-foreground = ${colors.foreground-alt}
-format-full-prefix = "BAT "
 format-full-prefix-foreground = ${colors.foreground-alt}
 ;format-full-underline = ${self.format-charging-underline}
 
