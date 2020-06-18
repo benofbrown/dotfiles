@@ -185,7 +185,8 @@ icon-play = ⏵
 icon-pause = ⏸
 icon-next = ⏭
 
-label-song-maxlen = 47
+label-song = %title% - %artist%
+label-song-maxlen = 42
 label-song-ellipsis = true
 
 bar-progress-width = 20
