@@ -103,6 +103,7 @@ interval = 25
 
 mount-0 = /
 mount-1 = /home
+mount-2 = /boot
 
 label-mounted = %{F#b58900}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint%
