@@ -12,6 +12,7 @@ bindkey -v
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[comment]='none'
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+zstyle ':completion:*' ignored-patterns '/tlp'
 
 HISTSIZE=1000
 SAVEHIST=1000
