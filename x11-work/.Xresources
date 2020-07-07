@@ -71,6 +71,7 @@
 
 ! From https://github.com/belluzj/fantasque-sans, plus packages fonts-dejavu-extra and fonts-symbola
 URxvt.font: xft:Fantasque Sans Mono:pixelsize=17,xft:DejaVu Sans Mono,xft:Symbola
+URxvt.italicFont: xft:Fantasque Sans Mono:pixelsize=17:style=Italic
 URxvt.scrollBar: False
 URxvt.cursorUnderline: True
 URxvt.cursorBlink: True
