@@ -1,5 +1,6 @@
 execute pathogen#infect()
 Helptags
+set term=rxvt-unicode-256color
 syntax on
 filetype plugin on
 set shiftwidth=2 smarttab expandtab tabstop=2
