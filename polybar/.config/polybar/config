@@ -66,10 +66,11 @@ cursor-scroll = ns-resize
 [bar/ben-work]
 inherit = bar/ben
 modules-left = mpd
-height = 23
+height = 45
 modules-right = workfilesystem pulseaudio memory cpu workwlan worketh battery temperature date
-font-0 = Fantasque Sans Mono:style=Bold:pixelsize=10
-font-4 = Fantasque Sans Mono:style=Regular:pixelsize=10
+font-0 = Fantasque Sans Mono:style=Bold:pixelsize=24
+font-3 = Symbola:style=Regular:pixelsize=30
+font-4 = Fantasque Sans Mono:style=Regular:pixelsize=24
 padding-left = 1
 padding-right = 1
 
@@ -177,8 +178,8 @@ label-urgent-padding = 2
 
 [module/mpd]
 type = internal/mpd
-format-online = <bar-progress> <label-song>
-format-playing = <bar-progress> <label-song> 🎜
+format-online = <bar-progress> <label-song> <label-time>
+format-playing = <bar-progress> <label-song> <label-time> 🎜
 
 icon-prev = ⏮
 icon-stop = ⏹
@@ -281,8 +282,7 @@ ramp-signal-font = 4
 
 [module/workwlan]
 inherit = module/wlan
-interface = wlp3s0
-
+interface = wlp0s20f3
 
 [module/eth]
 type = internal/network
@@ -302,7 +302,7 @@ format-disconnected =
 
 [module/worketh]
 inherit = module/eth
-interface = enp12s0
+interface = enx9405bb170c7c
 
 [module/date]
 type = internal/date
@@ -394,14 +394,12 @@ label-charging-foreground = #859900
 format-discharging = <ramp-capacity>
 format-full = <label-full>
 label-full = "🔌 "
-;format-discharging-underline = ${self.format-charging-underline}
 
 format-charging-prefix = "🔌 "
 format-charging-prefix-foreground = ${colors.foreground-alt}
 format-discharging-prefix = "🔋 "
 format-discharging-prefix-foreground = ${colors.foreground-alt}
 format-full-prefix-foreground = ${colors.foreground-alt}
-;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = ▁
 ramp-capacity-1 = ▂
@@ -409,14 +407,8 @@ ramp-capacity-2 = ▄
 ramp-capacity-3 = ▅
 ramp-capacity-4 = █
 ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = ▁
-animation-charging-1 = ▂
-animation-charging-2 = ▄
-animation-charging-3 = ▅
-animation-charging-4 = █
-animation-charging-foreground = #859900
-
+ramp-capacity-0-foreground = ${colors.alert}
+ramp-capacity-1-foreground = ${colors.secondary}
 
 [module/temperature]
 type = internal/temperature
