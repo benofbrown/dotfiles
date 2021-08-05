@@ -1,1 +1,1 @@
-autocmd BufNewFile *.py call Python2Boilerplate()
+autocmd BufNewFile *.py call PythonBoilerplate()

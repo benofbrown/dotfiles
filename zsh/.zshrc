@@ -17,6 +17,7 @@ zstyle ':completion:*' ignored-patterns '/tlp'
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.history
+KEYTIMEOUT=1
 
 unsetopt hist_verify
 unsetopt share_history
@@ -56,7 +57,7 @@ export EDITOR=vi
 
 export GPG_TTY=$TTY
 
-export PATH=~/bin:~/.local/bin:$PATH:~/go/bin
+export PATH=~/bin:~/.local/bin:$PATH
 export LESS=FXR
 export LIBVIRT_DEFAULT_URI=qemu:///system
 export VAGRANT_DEFAULT_PROVIDER=libvirt
