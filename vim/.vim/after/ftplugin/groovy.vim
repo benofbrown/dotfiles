@@ -1,1 +1,1 @@
-setlocal number shiftwidth=4 tabstop=4
+setlocal number shiftwidth=4 tabstop=4 autoindent

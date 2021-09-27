@@ -1,5 +1,5 @@
 if v:version >= 703
-  setlocal colorcolumn=80
+  setlocal colorcolumn=101
 endif
 call ToggleTabs()
 setlocal number makeprg=pep8\ %
