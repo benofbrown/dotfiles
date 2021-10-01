@@ -73,13 +73,6 @@ set laststatus=2
 let g:netrw_liststyle=3
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java', 'eruby', 'c'] }
-let g:syntastic_puppet_puppetlint_args = '--with-filename --error-level all --no-names_containing_dash-check --no-80chars-check --no-variable_is_lowercase-check'
-
 let g:airline#extensions#ale#enabled = 1
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
