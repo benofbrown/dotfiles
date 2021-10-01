@@ -156,10 +156,10 @@ ramp-signal-font = 4
 [module/workwlan]
 inherit = module/wlan
 interface = wlp0s20f3
+label-connected = %essid%
 
 [module/eth]
 type = internal/network
-label-connected = %essid%
 interface = enp1s0f1
 interval = 3.0
 
