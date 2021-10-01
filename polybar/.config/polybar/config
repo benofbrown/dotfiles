@@ -12,7 +12,7 @@ alert = #bd2c40
 
 [bar/ben]
 width = 100%
-height = 26
+height = 31
 fixed-center = false
 bottom = true
 
@@ -139,7 +139,7 @@ interface = wlp2s0
 interval = 3.0
 
 format-connected = <label-connected> <ramp-signal>
-label-connected = %essid%
+label-connected = %essid% %local_ip%
 
 format-disconnected =
 
@@ -159,6 +159,7 @@ interface = wlp0s20f3
 
 [module/eth]
 type = internal/network
+label-connected = %essid%
 interface = enp1s0f1
 interval = 3.0
 
@@ -240,6 +241,13 @@ ramp-capacity-4 = █
 ramp-capacity-foreground = ${colors.foreground-alt}
 ramp-capacity-0-foreground = ${colors.alert}
 ramp-capacity-1-foreground = ${colors.secondary}
+
+animation-charging-0 = ▁
+animation-charging-1 = ▂
+animation-charging-2 = ▄
+animation-charging-3 = ▅
+animation-charging-4 = █
+animation-charging-foreground = #859900
 
 [module/temperature]
 type = internal/temperature

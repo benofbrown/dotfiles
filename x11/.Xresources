@@ -70,8 +70,8 @@
 *color15: S_base3
 
 ! From https://github.com/belluzj/fantasque-sans, plus packages fonts-liberation and fonts-symbola
-URxvt.font: xft:Fantasque Sans Mono:pixelsize=23,xft:DejaVu Sans Mono,xft:Symbola
-URxvt.italicFont: xft:Fantasque Sans Mono:pixelsize=23:style=Italic
+URxvt.font: xft:Fantasque Sans Mono:pixelsize=18,xft:DejaVu Sans Mono,xft:Symbola
+URxvt.italicFont: xft:Fantasque Sans Mono:pixelsize=18:style=Italic
 URxvt.scrollBar: False
 URxvt.cursorUnderline: True
 URxvt.cursorBlink: True
