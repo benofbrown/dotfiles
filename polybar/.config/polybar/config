@@ -258,7 +258,8 @@ label-warn-foreground = ${colors.secondary}
 
 [module/worktemperature]
 inherit = module/temperature
-thermal-zone = 5
+; grep -l x86_pkg_temp /sys/class/thermal/thermal_zone*/type | sed -e 's:.*thermal_zone::' -e 's:/type::'
+thermal-zone = 13
 
 [settings]
 screenchange-reload = true

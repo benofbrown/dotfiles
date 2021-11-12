@@ -22,6 +22,7 @@ alias chrome exec google-chrome --force-device-scale-factor=2.5
 alias spotify exec spotify --force-device-scale-factor=2.5
 alias clipsync exec xclip -o | xclip -i -selection clipboard
 alias setvi exec echo "set -o vi; export LESS=FXR" | xclip -i
+alias screenshot exec scrot '%Y-%m-%d_%H%M%S_scrot.png' -e 'mv $f ~/screenshots/'
 
 bind c term
 bind C-c term
@@ -36,6 +37,7 @@ definekey top C-M-f firefox
 definekey top C-M-c chrome
 definekey top C-M-s spotify
 definekey top C-space exec rofi -dpi 192 -show run
+definekey top C-M-j screenshot
 
 definekey top M-F5 nextscreen
 definekey top M-Tab focus
