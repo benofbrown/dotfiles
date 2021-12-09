@@ -9,9 +9,6 @@ unset GIT_PAGER LESS PAGER
 
 
 bindkey -v
-typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[comment]='none'
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 zstyle ':completion:*' ignored-patterns '/tlp'
 
 HISTSIZE=1000
@@ -64,3 +61,7 @@ export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 export ANSIBLE_CONFIG=~/.ansible.cfg
+
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[comment]='none'
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
