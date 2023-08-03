@@ -22,6 +22,7 @@ if has("autocmd")
 
   autocmd BufReadPost *.run set filetype=sh
   autocmd BufReadPost *.gradle set filetype=groovy
+  autocmd BufReadPost *.install set filetype=text
   autocmd BufReadPost Jenkinsfile set filetype=groovy
 
   augroup END

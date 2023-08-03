@@ -90,7 +90,7 @@ icon-pause = ⏸
 icon-next = ⏭
 
 label-song = %title% - %artist%
-label-song-maxlen = 42
+label-song-maxlen = 78
 label-song-ellipsis = true
 
 bar-progress-width = 20
