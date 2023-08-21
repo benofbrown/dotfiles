@@ -17,9 +17,6 @@ definekey top C-M-l exec slock
 definekey top C-M-g exec gajim
 
 alias term exec urxvt
-alias firefox exec /home/ben/bin/firefox
-alias chrome exec google-chrome --force-device-scale-factor=2.5
-alias spotify exec spotify --force-device-scale-factor=2.5
 alias clipsync exec xclip -o | xclip -i -selection clipboard
 alias setvi exec echo "set -o vi; export LESS=FXR" | xclip -i
 
@@ -32,23 +29,30 @@ bind slash clipsync
 bind C-q only
 
 
-definekey top C-M-f firefox
-definekey top C-M-c chrome
-definekey top C-M-s spotify
-definekey top C-space exec rofi -dpi 192 -show run
+definekey top C-M-f exec firefox
+definekey top C-space exec rofi -show run
 
 definekey top M-F5 nextscreen
 definekey top M-Tab focus
 definekey top C-M-bracketleft sselect 0
 definekey top C-M-bracketright sselect 1
 
+# mpc
 definekey top C-M-space exec mpc toggle
-definekey top C-M-Up exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-definekey top C-M-Down exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-definekey top C-M-v exec pactl set-sink-volume @DEFAULT_SINK@ 50%
+definekey top XF86AudioPlay exec mpc toggle
 definekey top C-M-m exec mpc next
+definekey top XF86AudioNext exec mpc next
 definekey top C-M-n exec mpc prev
+definekey top XF86AudioPrev exec mpc prev
 definekey top C-M-b exec ratpoison -c "echo $(mpc)"
+
+# volume
+definekey top C-M-Up exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+definekey top C-M-Down exec pactl set-sink-volume @DEFAULT_SINK@ -2%
+definekey top XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+definekey top XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
+definekey top XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+definekey top C-M-v exec pactl set-sink-volume @DEFAULT_SINK@ 20%
 
 set padding 0 0 0 45
 

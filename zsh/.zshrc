@@ -65,3 +65,5 @@ export ANSIBLE_CONFIG=~/.ansible.cfg
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[comment]='none'
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export VIRTUAL_ENV_DISABLE_PROMPT=true

@@ -76,4 +76,4 @@ URxvt.scrollBar: False
 URxvt.cursorUnderline: True
 URxvt.cursorBlink: True
 
-Xft.dpi: 192
+! Xft.dpi: 192
