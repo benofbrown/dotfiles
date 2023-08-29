@@ -76,4 +76,3 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:airline#extensions#ale#enabled = 1
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-let g:ale_python_pylint_options = '--disable=C0111'

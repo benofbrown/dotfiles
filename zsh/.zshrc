@@ -40,6 +40,7 @@ bindkey -M vicmd "k" vi-up-line-or-history
 bindkey '^N' menu-complete
 bindkey '^P' reverse-menu-complete
 
+export PATH=~/bin:~/.local/bin:$PATH
 fpath+=(~/.zsh/functions)
 autoload -Uz load_functions
 load_functions
@@ -54,7 +55,6 @@ export EDITOR=vi
 
 export GPG_TTY=$TTY
 
-export PATH=~/bin:~/.local/bin:$PATH
 export LESS=FXR
 export LIBVIRT_DEFAULT_URI=qemu:///system
 export VAGRANT_DEFAULT_PROVIDER=libvirt
