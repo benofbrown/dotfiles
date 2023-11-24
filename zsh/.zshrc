@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ben"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
-plugins=(vagrant svn-fast-info docker docker-compose aws)
+plugins=(vagrant svn-fast-info docker docker-compose aws azure)
 source $ZSH/oh-my-zsh.sh
 unset GIT_PAGER LESS PAGER
 
@@ -11,8 +11,8 @@ unset GIT_PAGER LESS PAGER
 bindkey -v
 zstyle ':completion:*' ignored-patterns '/tlp'
 
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=100000
 HISTFILE=~/.history
 KEYTIMEOUT=1
 
