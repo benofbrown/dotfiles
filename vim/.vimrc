@@ -77,5 +77,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:airline#extensions#ale#enabled = 1
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <leader>g <Plug>(ale_go_to_definition)
 
 let g:vimspector_enable_mappings = 'HUMAN'
