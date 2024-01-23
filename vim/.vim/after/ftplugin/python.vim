@@ -4,4 +4,4 @@ endif
 call ToggleTabs()
 setlocal number makeprg=pep8\ %
 setlocal shiftwidth=4 tabstop=4 autoindent
-let g:ale_python_pylint_executable = 'pylint'
+let g:ale_linters = {'python': ['ruff']}

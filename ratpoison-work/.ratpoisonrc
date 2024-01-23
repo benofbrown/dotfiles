@@ -18,7 +18,7 @@ definekey top C-M-g exec gajim
 
 alias term exec urxvt
 alias clipsync exec xclip -o | xclip -i -selection clipboard
-alias setvi exec echo "set -o vi; export LESS=FXR" | xclip -i
+alias setvi exec echo "set -o vi; export LESS=FXR EDITOR=vi" | xclip -i
 alias scrot exec scrot -M 1 '/tmp/screenshot_%Y-%m-%d_%H%M%S.png'
 
 bind c term
