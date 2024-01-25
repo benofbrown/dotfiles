@@ -21,8 +21,6 @@ if has("autocmd")
   \ endif
 
   autocmd BufReadPost *.run set filetype=sh
-  autocmd BufReadPost *.gradle set filetype=groovy
-  autocmd BufReadPost Jenkinsfile set filetype=groovy
 
   augroup END
 endif
