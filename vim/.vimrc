@@ -1,3 +1,4 @@
+let g:ale_completion_enabled=1
 execute pathogen#infect()
 Helptags
 set term=rxvt-unicode-256color
@@ -73,8 +74,13 @@ let g:netrw_liststyle=3
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 let g:airline#extensions#ale#enabled = 1
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <leader>j <Plug>(ale_next_wrap)
+nmap <silent> <leader>k <Plug>(ale_previous_wrap)
 nmap <silent> <leader>g <Plug>(ale_go_to_definition)
+nmap <silent> <leader>r <Plug>(ale_find_references)
+nmap <silent> <leader>f <Plug>(ale_fix)<cr>
 
 let g:vimspector_enable_mappings = 'HUMAN'
+nmap <silent> <leader>R :call vimspector#Reset()<cr>
+nmap <silent> <leader>e <Plug>VimspectorBalloonEval
+xmap <silent> <leader>e <Plug>VimspectorBalloonEval

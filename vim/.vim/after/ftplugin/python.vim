@@ -1,6 +1,5 @@
-setlocal colorcolumn=119
 call ToggleTabs()
-setlocal shiftwidth=4 tabstop=4 autoindent
+setlocal shiftwidth=4 tabstop=4 autoindent number colorcolumn=119
 let g:ale_linters = {'python': ['ruff', 'pyright']}
 let g:ale_fixers = {'python': ['ruff', 'ruff_format']}
 let g:ale_python_ruff_executable = '/home/ben/data/venv/bin/ruff'

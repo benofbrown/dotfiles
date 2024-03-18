@@ -14,12 +14,12 @@ exec /home/ben/bin/startup.sh
 definekey top C-Right next
 definekey top C-Left prev
 definekey top C-M-l exec slock
-definekey top C-M-g exec gajim
 
 alias term exec urxvt
 alias clipsync exec xclip -o | xclip -i -selection clipboard
 alias setvi exec echo "set -o vi; export LESS=FXR EDITOR=vi" | xclip -i
-alias scrot exec scrot -M 1 '/tmp/screenshot_%Y-%m-%d_%H%M%S.png'
+alias scrot exec scrot -m '/tmp/screenshot_%Y-%m-%d_%H%M%S.png'
+alias firefox exec /home/ben/bin/firefox.sh
 
 bind c term
 bind C-c term
@@ -30,7 +30,7 @@ bind slash clipsync
 bind C-q only
 
 
-definekey top C-M-f exec firefox
+definekey top C-M-f firefox
 definekey top C-M-s scrot
 definekey top C-space exec rofi -show run
 

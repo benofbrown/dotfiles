@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/vimspector"]
 	path = vim/.vim/bundle/vimspector
 	url = https://github.com/puremourning/vimspector.git
+[submodule "vim/.vim/pack/plugins/start/vim-tmux-navigator"]
+	path = vim/.vim/pack/plugins/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
