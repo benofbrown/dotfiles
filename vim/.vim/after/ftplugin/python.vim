@@ -13,3 +13,5 @@ let g:ale_python_pyright_config = {
 \   }
 \ }
 \}
+
+nmap <silent> <C-]> <Plug>(ale_go_to_definition)
