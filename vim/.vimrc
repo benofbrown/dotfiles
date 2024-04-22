@@ -12,6 +12,8 @@ set spelllang=en_gb
 
 set listchars=eol:↵,tab:⇥•,trail:•
 
+set wildignore+=*.o,*/node_modules/*,.git/*
+
 if has("autocmd")
   augroup vimrcEx
   autocmd!
