@@ -59,7 +59,6 @@ export LESS=FXR
 export LIBVIRT_DEFAULT_URI=qemu:///system
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 export ANSIBLE_CONFIG=~/.ansible.cfg
 
 typeset -A ZSH_HIGHLIGHT_STYLES

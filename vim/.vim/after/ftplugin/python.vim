@@ -15,3 +15,28 @@ let g:ale_python_pyright_config = {
 \}
 
 nmap <silent> <C-]> <Plug>(ale_go_to_definition)
+
+function! DebugCurrent()
+  call vimspector#LaunchWithConfigurations( {
+    \  "attach": {
+    \    "adapter": "debugpy",
+    \    "configuration": {
+    \      "request": "launch",
+    \      "type": "python",
+    \      "cwd": "${workspaceRoot}",
+    \      "python": "/home/ben/data/venv/bin/python",
+    \      "program": "${file}",
+    \      "stopOnEntry": "false",
+    \      "console": "integratedTerminal",
+    \    },
+    \   "breakpoints": {
+    \     "exception": {
+    \       "uncaught": "Y",
+    \       "raised": "",
+    \       "userUnhandled": "",
+    \   },
+    \  }
+    \ }} )
+endfunction
+
+nmap <silent> <leader>d :call DebugCurrent()<cr>

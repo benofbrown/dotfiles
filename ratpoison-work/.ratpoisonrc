@@ -33,6 +33,7 @@ bind C-q only
 definekey top C-M-f firefox
 definekey top C-M-s scrot
 definekey top C-space exec rofi -show run
+definekey top Super_L exec rofi -show run
 
 definekey top M-F5 nextscreen
 definekey top M-Tab focus
@@ -55,8 +56,9 @@ definekey top XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
 definekey top XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
 definekey top XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 definekey top C-M-v exec pactl set-sink-volume @DEFAULT_SINK@ 20%
+definekey top Super_R exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-set padding 0 0 0 36
+set padding 0 36 0 0
 
 unmanage panel
 exec rpws init 4 -k
