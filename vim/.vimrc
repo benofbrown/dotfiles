@@ -85,4 +85,3 @@ nmap <silent> <leader>f <Plug>(ale_fix)
 let g:vimspector_enable_mappings = 'HUMAN'
 nmap <silent> <leader>R :call vimspector#Reset()<cr>
 nmap <silent> <leader>e <Plug>VimspectorBalloonEval
-xmap <silent> <leader>e <Plug>VimspectorBalloonEval
