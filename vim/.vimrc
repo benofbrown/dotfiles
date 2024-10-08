@@ -79,6 +79,7 @@ let g:airline#extensions#ale#enabled = 1
 nmap <silent> <leader>j <Plug>(ale_next_wrap)
 nmap <silent> <leader>k <Plug>(ale_previous_wrap)
 nmap <silent> <leader>g <Plug>(ale_go_to_definition)
+nmap <silent> <leader>i <Plug>(ale_go_to_implementation)
 nmap <silent> <leader>r <Plug>(ale_find_references)
 nmap <silent> <leader>f <Plug>(ale_fix)
 
