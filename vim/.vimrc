@@ -1,5 +1,11 @@
 let g:ale_completion_enabled=1
 execute pathogen#infect()
+
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
 Helptags
 set term=rxvt-unicode-256color
 syntax on
@@ -74,6 +80,9 @@ set laststatus=2
 
 let g:netrw_liststyle=3
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+nmap <silent> <leader>t :FZF<cr>
+nmap <silent> <leader>b :Buffers<cr>
 
 let g:airline#extensions#ale#enabled = 1
 nmap <silent> <leader>j <Plug>(ale_next_wrap)
