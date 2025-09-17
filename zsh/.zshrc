@@ -40,7 +40,7 @@ bindkey -M vicmd "k" vi-up-line-or-history
 bindkey '^N' menu-complete
 bindkey '^P' reverse-menu-complete
 
-export PATH=~/bin:~/.local/bin:$PATH
+export PATH=~/bin:~/.local/bin:/usr/games:$PATH
 fpath+=(~/.zsh/functions)
 autoload -Uz load_functions
 load_functions
