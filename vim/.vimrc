@@ -2,6 +2,7 @@ let g:ale_completion_enabled=1
 execute pathogen#infect()
 
 call plug#begin()
+" Run :PlugInstall to install the plugins
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 call plug#end()
