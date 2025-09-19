@@ -66,6 +66,16 @@ prompt_context() {
   fi
 }
 
+prompt_kubernetes() {
+  local context
+  if type -p kubectl >/dev/null 2>&1; then
+    if context=$(kubectl config current-context 2>/dev/null); then
+      prompt_segment 10 black
+      echo -n "$context"
+    fi
+  fi
+}
+
 # Git: branch/detached head, dirty status
 prompt_git() {
   local ref dirty mode repo_path success
@@ -166,6 +176,7 @@ build_prompt() {
   RETVAL=$?
   prompt_status
   prompt_virtualenv
+  prompt_kubernetes
   prompt_context
   prompt_dir
   prompt_git
