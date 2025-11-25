@@ -8,7 +8,10 @@ let g:ale_python_pyright_config = {
 \   'pythonPath': '/home/ben/data/venv/bin/python',
 \   'analysis': {
 \     'typeCheckingMode': 'off',
-\     'extraPaths': ['/home/ben/git/Repo/CoreLibrary'],
+\     'extraPaths': [
+\         '/home/ben/git/Repo/CoreLibrary',
+\         '/home/ben/git/Repo/WebApp',
+\     ],
 \   }
 \ }
 \}
