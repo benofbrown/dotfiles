@@ -18,3 +18,7 @@ Not really sure where to place these but didn't want them lost to the mists of t
     gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
     gsettings set org.gnome.mutter check-alive-timeout 60000
 
+Also I've installed the following extensions:
+
+- [Fix focus on workspace switch](https://extensions.gnome.org/extension/6084/fix-focus-on-workspace-switch/)
+- [WireGuard-VPN-extension](https://extensions.gnome.org/extension/5362/wireguard-vpn-extension/)
